@@ -33,6 +33,21 @@ public class Main_Memento {
 ````
 
 ### 2- State Pattern
+State pattern allows an object to behave differently when its state changes.
+
+`src/state/`
+
+`Main.java`:
+
+```java
+public static void main(String[] args) {
+    var canvas = new Canvas();
+    canvas.setCurrentTool(new EraserTool());
+    canvas.mouseDown();
+    canvas.mouseUp();
+}
+```
+
 ### 3- Iterator Pattern
 ### 4- Strategy Pattern
 ### 5- Template Method Pattern
