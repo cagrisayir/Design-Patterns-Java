@@ -4,7 +4,7 @@
 
 ### 1- Memento Pattern
 
-We use this pattern for implementing **Undo** mechanisms.
+We use the Memento pattern for implementing **Undo** mechanisms.
 
 `src/mementom/`
 
@@ -33,7 +33,7 @@ public class Main_Memento {
 ````
 
 ### 2- State Pattern
-State pattern allows an object to behave differently when its state changes.
+The State pattern allows an object to behave differently when its state changes.
 
 `src/state/`
 
@@ -49,7 +49,34 @@ public static void main(String[] args) {
 ```
 
 ### 3- Iterator Pattern
+The Iterator pattern provides a consistent way to sequentially access elements within a collection (like an array or list) without revealing its underlying implementation.
+
+`src/iterator/`
+
+`Main.java`:
+```java
+public static void main(String[] args) {
+    var history = new BrowseHistory();
+    history.push("a");
+    history.push("b");
+    history.push("c");
+
+    Iterator iterator = history.createIterator();
+    while (iterator.hasNext()){
+        var url = iterator.current();
+        System.out.println(url);
+        iterator.next();
+    }
+}
+```
 ### 4- Strategy Pattern
+
+`src/strategy/`
+
+`Main.java`
+```java
+
+```
 ### 5- Template Method Pattern
 ### 6- Command Pattern
 ### 7- Observer Pattern
