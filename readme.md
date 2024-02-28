@@ -75,7 +75,12 @@ public static void main(String[] args) {
 
 `Main.java`
 ```java
-
+public static void main(String[] args) {
+        var imageStorage = new ImageStorage(
+                new JpegCompressor(),
+                new BlackAndWhiteFilter());
+        imageStorage.store("A");
+    }
 ```
 ### 5- Template Method Pattern
 ### 6- Command Pattern
