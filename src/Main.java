@@ -1,19 +1,12 @@
-import iterator.BrowseHistory;
-import iterator.Iterator;
-import state.BrushTool;
-import state.Canvas;
-import state.EraserTool;
-import state.SelectionTool;
-import strategy.BlackAndWhiteFilter;
-import strategy.ImageStorage;
-import strategy.JpegCompressor;
-import template.AuditTrail;
-import template.TransferMoneyTask;
+import command.AddCustomerCommand;
+import command.CustomerService;
+import command.fx.Button;
 
 public class Main {
     public static void main(String[] args) {
-        var auditTrail = new AuditTrail();
-        var task = new TransferMoneyTask(auditTrail);
-        task.execute();
+        var service = new CustomerService();
+        var command = new AddCustomerCommand(service);
+        var button = new Button(command);
+        button.click();
     }
 }

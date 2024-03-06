@@ -76,11 +76,11 @@ public static void main(String[] args) {
 `Main.java`
 ```java
 public static void main(String[] args) {
-    var imageStorage = new ImageStorage(
-            new JpegCompressor(),
-            new BlackAndWhiteFilter());
-    imageStorage.store("A");
-    }
+var imageStorage = new ImageStorage(
+        new JpegCompressor(),
+        new BlackAndWhiteFilter());
+imageStorage.store("A");
+}
 ```
 ### 5- Template Method Pattern
 `src/template/`
@@ -93,6 +93,15 @@ public static void main(String[] args) {
     }
 ```
 ### 6- Command Pattern
+`src/command/`
+```java
+public static void main(String[] args) {
+    var service = new CustomerService();
+    var command = new AddCustomerCommand(service);
+    var button = new Button(command);
+    button.click();
+}
+```
 ### 7- Observer Pattern
 ### 8- Mediator Pattern
 ### 9- Chain of Responsibility Pattern
