@@ -116,17 +116,30 @@ Allows adding new operations to an object structure without modifying it.
 ## Structural Design Patterns
 
 ### 1- Composite Pattern
+Represents object hierarchies where individual objects and compositions of objects are treated the same way.
+
 ### 2- Adapter Pattern
+Allows converting the interface of a class into another interface that clients expect.
 ### 3- Decorator Pattern
+Adds additional behavior to an object dynamically.
 ### 4- Facade Pattern
+Provides a simplified, higher-level interface to a subsystem. Clients can talk to the facade rather than individual classes in the subsystem.
 ### 5- Flyweight Pattern
+Allows sharing common state between multiple objects.
 ### 6- Bridge Pattern
+Allows representing hierarchies that grow in two different dimensions independently.
 ### 7- Proxy Pattern
+Allows providing a substitute for another object. The proxy object delegates all the work to the target object and contains some additional behavior.
 
 ## Creational Design Patterns
 
 ### 1- Prototype Pattern
+To create new objects by copying an existing object.
 ### 2- Singleton Pattern
+To ensure an object has only a single instance.
 ### 3- Factory Method Pattern
+Allows deferring the creation of an object to subclasses.
 ### 4- Abstract Factory Pattern
+Provides an interface for creating families of related objects.
 ### 5- Builder Pattern
+Allows separating the construction of an object from its representation so the same construction algorithm can be applied to different representations.
