@@ -93,6 +93,8 @@ public static void main(String[] args) {
     }
 ```
 ### 6- Command Pattern
+Allows decouple a sender from a receiver. The sender will talk to the receive through a command. Commands can be undone and persisted.
+
 `src/command/`
 ```java
 public static void main(String[] args) {
@@ -103,10 +105,14 @@ public static void main(String[] args) {
 }
 ```
 ### 7- Observer Pattern
+Allows an object notify other objects when its state changes.
 ### 8- Mediator Pattern
+Allows an object to encapsulate the communication between other
+objects.
 ### 9- Chain of Responsibility Pattern
+Allows building a chain of objects to process a request.
 ### 10- Visitor Patter
-
+Allows adding new operations to an object structure without modifying it.
 ## Structural Design Patterns
 
 ### 1- Composite Pattern
